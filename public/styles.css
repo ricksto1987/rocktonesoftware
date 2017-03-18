@@ -1,0 +1,588 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
+  margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+.rocktone-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.rocktone-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.rocktone-fab {
+  position: absolute;
+  right: 20%;
+  bottom: 100px;
+  z-index: 3;
+  background: #d56d4b !important;
+  color: white !important;
+}
+
+.rocktone-mobile-title {
+  display: none !important;
+}
+
+
+.rocktone-logo-image {
+  height: 32px;
+  width: 164px;
+}
+
+
+.rocktone-header {
+  overflow: visible;
+  background-color: white;
+}
+
+  .rocktone-header .material-icons {
+    color: #767777 !important;
+  }
+
+  .rocktone-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+  }
+
+  .rocktone-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .rocktone-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .rocktone-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    justify-content: flex-end;
+    width: 800px;
+  }
+
+  .rocktone-search-box.is-focused + .rocktone-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+
+  .rocktone-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .rocktone-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #d56d4b;
+    }
+
+  .rocktone-search-box {
+    order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .rocktone-more-button {
+    order: 3;
+  }
+
+
+.rocktone-drawer {
+  border-right: none;
+}
+
+  .rocktone-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .rocktone-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .rocktone-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #8bc34a;
+  }
+
+  .rocktone-drawer .mdl-layout-title {
+    position: relative;
+    background: #d56d4b;
+    height: 160px;
+  }
+
+    .rocktone-drawer .rocktone-logo-image {
+      position: absolute;
+      bottom: 16px;
+    }
+
+.rocktone-pope-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  /*background: url('images/slide01.jpg') center 30% no-repeat;*/
+  background-size: cover;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fac695+0,f5ab66+47,ef8d31+100;Orange+3D+%232 */
+  background: #fac695; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fac695 0%, #f5ab66 47%, #ef8d31 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #fac695 0%,#f5ab66 47%,#ef8d31 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #fac695 0%,#f5ab66 47%,#ef8d31 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fac695', endColorstr='#ef8d31',GradientType=0 ); /* IE6-9 */
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.rocktone-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.rocktone-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.rocktone-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+  .rocktone-create-character a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+  }
+
+.rocktone-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#deefff+0,98bede+100;Blue+3D+%2310 */
+  background: #deefff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #deefff 0%, #98bede 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #deefff 0%,#98bede 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #deefff 0%,#98bede 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 ); /* IE6-9 */
+  
+}
+
+.rocktone-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  top: 70px;
+  z-index: 999;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b2e1ff+0,66b6fc+100;Blue+3D+%236 */
+  background: #b2e1ff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #b2e1ff 0%, #66b6fc 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #b2e1ff 0%,#66b6fc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #b2e1ff 0%,#66b6fc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', endColorstr='#66b6fc',GradientType=0 ); /* IE6-9 */
+
+}
+
+.rocktone-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.rocktone-screen {
+  text-align: center;
+}
+
+.rocktone-screen .rocktone-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.rocktone-image-link {
+  text-decoration: none;
+}
+
+.rocktone-wear {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+  .rocktone-wear .rocktone-screen-image {
+    width: 40%;
+    z-index: 1;
+  }
+
+
+.rocktone-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+  .rocktone-phone .rocktone-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.rocktone-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+  .rocktone-tablet .rocktone-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .rocktone-tablet .rocktone-link {
+    display: block;
+    z-index: 2;
+  }
+
+
+.rocktone-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+  .rocktone-tv .rocktone-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.rocktone-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+  .rocktone-auto .rocktone-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+  }
+
+
+.rocktone-download-section {
+  position: relative;
+  /*background: url('images/wear.png') center top no-repeat;*/
+  background-size: cover;
+  height: 200px;
+  top: 70px;
+}
+
+.rocktone-download-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.rocktone-download-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .rocktone-download-band-text p {
+    padding-top: 8px;
+  }
+
+.rocktone-link {
+  text-decoration: none;
+  color: #d56d4b !important;
+}
+
+  .rocktone-link:hover {
+    color: #e79d86 !important;
+  }
+
+  .rocktone-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+
+.rocktone-alt-link {
+  text-decoration: none;
+  color: #d56d4b !important;
+  font-size: 16px;
+}
+
+  .rocktone-alt-link:hover {
+    color: #e79d86 !important;
+  }
+
+  .rocktone-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.rocktone-customized-section {
+  text-align: center;
+}
+
+.rocktone-customized-section-text {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+  .rocktone-customized-section-text p {
+    padding-top: 16px;
+  }
+
+.rocktone-customized-section-image {
+  background: url('images/devices.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.rocktone-more-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .rocktone-more-section .rocktone-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+  }
+
+.rocktone-card-container {
+}
+
+  .rocktone-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .rocktone-card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .rocktone-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .rocktone-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .rocktone-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+  .rocktone-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .rocktone-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
+
+.rocktone-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+  .rocktone-footer a:hover {
+    color: #e79d86;
+  }
+
+  .rocktone-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .rocktone-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .rocktone-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .rocktone-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .rocktone-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.rocktone-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .rocktone-navigation-container {
+    display: none;
+  }
+
+  .rocktone-title {
+    display: none !important;
+  }
+
+  .rocktone-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .rocktone.rocktone-search-box.is-focused ~ .rocktone-mobile-title,
+  .rocktone-search-box.is-focused + .rocktone-navigation-container + .rocktone-mobile-title {
+    opacity: 0;
+  }
+
+  .rocktone-more-button {
+    display: none;
+  }
+
+  .rocktone-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .rocktone-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .rocktone-pope-section {
+    height: 350px;
+  }
+
+  .rocktone-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .rocktone-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .rocktone-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .rocktone-create-character img {
+    height: 12px;
+  }
+
+  .rocktone-fab {
+    display: none;
+    background: #d56d4b !important;
+  }
+
+  .rocktone-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .rocktone-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
+
+.carousel-inner > .item > img{
+  display: initial !important;
+}
+
+.mdl-typography--font-light {
+  text-align: left;
+}
+
+li {
+  text-align: left;
+}
+
+.carousel-control.left {
+  background-image: none !important;
+}
+
+.carousel-control.right {
+  background-image: none !important;
+}
