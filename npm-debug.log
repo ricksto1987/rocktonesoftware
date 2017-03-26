@@ -1,7 +1,6 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/Users/richardstones/.nvm/versions/node/v6.2.0/bin/node',
 1 verbose cli   '/Users/richardstones/.nvm/versions/node/v6.2.0/bin/npm',
-1 verbose cli   'run',
 1 verbose cli   'start' ]
 2 info using npm@3.8.9
 3 info using node@v6.2.0
@@ -28,7 +27,7 @@
 15 verbose pkgid node-js-getting-started@0.2.5
 16 verbose cwd /Users/richardstones/rocktonesoftware
 17 error Darwin 16.1.0
-18 error argv "/Users/richardstones/.nvm/versions/node/v6.2.0/bin/node" "/Users/richardstones/.nvm/versions/node/v6.2.0/bin/npm" "run" "start"
+18 error argv "/Users/richardstones/.nvm/versions/node/v6.2.0/bin/node" "/Users/richardstones/.nvm/versions/node/v6.2.0/bin/npm" "start"
 19 error node v6.2.0
 20 error npm  v3.8.9
 21 error code ELIFECYCLE
