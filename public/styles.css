@@ -587,3 +587,7 @@ li {
 .carousel-control.right {
   background-image: none !important;
 }
+
+.fa {
+  font-size: 24pt !important;
+}
